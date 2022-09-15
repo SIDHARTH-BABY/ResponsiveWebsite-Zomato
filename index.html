@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <link rel="icon" href="data:image/png;base64,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" type="image/gif" sizes="16x16">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+<body>
+    <header class="container-fluid">
+       
+      <div class="row">
+              
+            <div
+            class="  bg-image "  
+            style="background-image : url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png');
+              height: 400px; ">
+             
+              
+          <nav class="navbar navbar-expand-lg">
+   
+              <button  onclick="download()" type="button" class=" bg-transparent text-white border border-dark ms-3"  >Get The App</button> 
+            
+                    
+            <div class="container-fluid ">
+              
+              <button class="navbar-toggler my-auto " type="button"  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse justify-content-end me-3" id="navbarNav">
+                <ul class="navbar-nav me-5 ">
+                  <li class="nav-item  ">
+                    <a class="nav-link active text-white " aria-current="page" href="#">Investor Relations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" href="#">Add Restraunts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" href="#">Log In</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-white">Sign Up</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+            <div class="mask">
+              <div class="d-flex justify-content-center align-items-center  ">
+                <div  class="text-white">
+                  <div class="ps-5 pt-3 ms-5 ">
+
+                    <img class=" mb-3 ps-5 ms-5"  width="310" src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png">
+
+                  </div>
+         
+                    <h1  >Discover the best food & drinks in thrissur</h1>
+                    <div  class="input-group rounded ">
+                        <input  type="search" class="form-control rounded mt-3" placeholder="Search for restraunts" aria-label="Search" aria-describedby="search-addon" />
+                        
+                      </div>
+                    
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+        </div>
+       
+                
+    </header>
+    
+           <section class="pt-5  ">
+            <div class="container ps-5 ">
+              <div class="row  ">
+                <div class="col-md-6">
+
+                  <div class="card " style="width: 25rem;">
+                    <img class="card-img-top  " src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,* "  alt="Card image cap">
+                    <div class="card-body ">
+                      <h5>Order Online</h5>
+                      <p class="card-text">Stay Home and order to your door step</p>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-md-6">
+                  <div class="card" style="width: 25rem;">
+                    <img class="card-img-top img-fluid" src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt="Card image cap">
+                    <div class="card-body">
+                      <h5>Dining</h5>
+                      <p class="card-text">View the cities favourite dining venues</p>
+                    </div>
+                  </div>
+               
+                </div>
+              </div>
+            </div>
+            
+           </section>
+           <section>
+            <div class="container mt-5">
+              <div class="row">
+                <div>
+                  <h1>Collections</h1>
+                  <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Thrissur, based on trends</p>
+                </div>
+
+               
+
+               
+             
+              
+                <div class="col-md-4">
+                  <a class="text-decoration-none" href="https://zomato.com/thrissur/order-food-online?delivery_subzone=24498">
+                  <div class="card " style="text-decoration: none; color: black;">
+                    <img class="card-img-top img-fluid" src="https://b.zmtcdn.com/data/collections/1b8c164e8a18878468d8aabeb0b486b1_1625812715.jpg?output-format=webp">
+                    <div class="card-body">
+                      <h5>Trending This Week</h5>
+                      <p class="card-text">22 places></p>
+                    </div>
+                  </div>
+                </a>
+                </div>
+             
+                <div class="col-md-4">
+                  <div class="card" >
+                    <img class="card-img-top img-fluid" src="https://b.zmtcdn.com/data/collections/532af3ab24d29dbddcdcd16921ada06f_1535628640.jpg?output-format=webp">
+                    <div class="card-body">
+                      <h5>Great Breakfasts</h5>
+                      <p class="card-text">6 Places></p>
+                    </div>
+                  </div>
+
+                </div>
+              
+
+              <div class="col-md-4">
+
+                  
+
+                  <div class="card" >
+                    <img class="card-img-top img-fluid" src="https://b.zmtcdn.com/data/collections/ecec46ffb5bc20bebe0857c47f630fc5_1535354925.jpg?output-format=webp">
+                    <div class="card-body">
+                      <h5>Brilliant Biriyanis</h5>
+                      <p class="card-text">6 Places></p>
+                    </div>
+                  </div>
+              </div>
+               
+                
+              
+              </div>
+            </div>
+           </section>
+           <section>
+            <div class="container p-5">
+
+              <h4 >Popular localities in and around Thrissur</h4>
+              <div class="row pt-5 ">
+                <div class=" col-md-4 ">
+                <div class="card" style="width: 28rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Poothole</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">214 places</h6>                        
+                  </div>
+                </div>
+                </div>
+
+
+                <div class="col-md-4">
+                  <div class="card " style="width: 28rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Kizhakkumpattukara</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">116 places</h6>                        
+                    </div>
+                  </div>
+                  </div>
+                 
+
+                  <div class="col-md-4">
+                    <div class="card" style="width: 28rem;">
+                      <div class="card-body">
+                        <h5 class="card-title"> chalakudy</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">86 places</h6>                        
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="row pt-5">
+
+                  
+
+                    <div class="col-md-4">
+                      <div class="card" style="width: 28rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Ayyanthole</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">85 places</h6>                        
+                        </div>
+                      </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card" style="width: 28rem;">
+                          <div class="card-body">
+                            <h5 class="card-title">Guruvayur locality</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">69 places</h6>                        
+                          </div>
+                        </div>
+                        </div>
+
+                        <div class="col-md-4">
+                          <div class="card" style="width: 28rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">puzhakkal</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">58 places</h6>                        
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+
+                        <div class="row pt-4 ">
+                          <div class="col-md-4">
+                            <div class="card" style="width: 28rem;">
+                              <div class="card-body">
+                                <h5 class="card-title">Peringavu</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">54 places</h6>                        
+                              </div>
+                            </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="card" style="width: 28rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Irinjalakuda Locality</h5>
+                                  <h6 class="card-subtitle mb-2 text-muted">54 places</h6>                        
+                                </div>
+                              </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="card" style="width: 28rem;">
+                                  <div class="card-body">
+                                    <h5 class="card-title">see more</h5>
+                                                         
+                                  </div>
+                                </div>
+                                </div>
+                              </div>     
+            </div>
+           </section>
+
+
+           <section>
+            <div class="container">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item ">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Popular cuisines near me
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Arabian food near meBakery food near meBeverages food near meBiryani food near meBurger food near meChinese food near meContinental food 
+                      near meDesserts food near meIce Cream food near meJuices food near meKerala food near meLebanese food near meMughlai food near meNorth Indian food near mePizza food near meSandwich food near meShake food near meSichuan food near meSouth Indian food near meStreet food near me</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Popular restaurant types near me
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Bakeries near meBars near meBeverage Shops near meCafés near meCasual Dining near meDessert Parlors near
+                       meFine Dining near meFood Courts near meKiosks near meLounges near meQuick Bites near meSweet Shops near me</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Cities We Deliver To
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Delhi NCRKolkataMumbaiBengaluruPuneHyderabadChennaiLucknowKochiJaipurAhmedabadChandigarhGoaIndoreNashikOotyShimlaLudhianaGuwahatiAmritsarKanpurAllahabadAurangabadBhopalRanchiVisakhapatnamBhubaneswarCoimbatoreMangaloreVadodaraNagpurAgraDehradunMysorePuducherrySuratVaranasiPatnaUdaipurKhajurahoNeemranaCuttackTrivandrumHaridwarLehPushkarRajkotMaduraiKozhikodeAlappuzha
+                      ThrissurManipalVijayawadaJodhpurKotaAjmerMussoorieRishikeshJalandharJammuManaliDharamshalaRaipurGorakhpurSee more</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+         
+           </section>
+          
+           
+           <section>
+           
+<footer class=" bg-light  ">
+ 
+  <section
+    class="d-flex  justify-content-lg-between p-4 border-bottom">
+  
+   
+    <div class="ms-2 ">
+      <span><img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*"></span>
+    </div>
+  
+
+  </section>
+ 
+
+
+  <section >
+    <div class="container text-center text-md-start mt-5">
+     
+      <div class="row mt-3">
+        
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4 ">
+          
+          <h6 class="text-uppercase fw-bold mb-4 ">
+            About Zomato
+          </h6>
+          <p >
+            <a href="#" class="text-reset text-decoration-none">Who We Are</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Blog</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Work With Us</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Investor Relations</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Report Fraud</a>
+          </p>
+        </div>
+
+       
+
+       
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+         
+          <h6 class="text-uppercase fw-bold mb-4">
+            ZOMAVERSE
+          </h6>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Zomato</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none ">Feeding India</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Hyperpure</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Zomaland</a>
+          </p>
+        </div>
+        
+
+        
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+          
+          <h6 class="text-uppercase fw-bold mb-4">
+            FOR RESTAURANTS
+          </h6>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Partner with us</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Apps for you</a>
+          </p>
+          <h6 class="text-uppercase fw-bold mb-4">
+            FOR ENTERPRISES
+          </h6>
+          
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Zomato for work</a>
+          </p>
+        </div>
+        
+
+       
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+         
+          <h6 class="text-uppercase fw-bold mb-4">
+            Learn More
+          </h6>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Privacy</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Security</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Terms</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Sitemap</a>
+          </p>
+        </div>
+        
+      </div>
+      
+    </div>
+  </section>
+ 
+
+  
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies.
+     All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd. All rights reserved.
+    
+  </div>
+  
+</footer>
+
+
+            
+            
+</section>
+           
+    <script>
+      function download(){
+      alert("download started")
+            }
+ </script>
+           
+        
+        
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+        
+         
+
+       
+       
+    
+</body>
+</html>
